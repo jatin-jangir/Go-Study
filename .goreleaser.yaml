@@ -13,8 +13,7 @@ builds:
       - linux
       - windows
       - darwin
-gomod:
-  proxy: true
+
 archives:
   - format: tar.gz
     # this name template makes the OS and Arch compatible with the results of uname.
@@ -29,7 +28,6 @@ archives:
     format_overrides:
     - goos: windows
       format: zip
-    wrap_in_directory: true
 checksum:
   name_template: 'checksums.txt'
 snapshot:
